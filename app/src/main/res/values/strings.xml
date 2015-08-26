@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Tic Tac Toe</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="greeting">Click on a tile to begin.</string>
+    <string name="records">Records</string>
+    <string name="played">Games played:</string>
+    <string name="tied">Games tied:</string>
+    <string name="won">Games won:</string>
+    <string name="lost">Games lost:</string>
+    <string name="action_settings">Settings</string>
+</resources>

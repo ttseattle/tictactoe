@@ -1,0 +1,141 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
+        <TableRow>
+            <Button
+                android:id="@+id/tileOne"
+                style="@style/tile"/>
+            <Button
+                android:id="@+id/tileTwo"
+                style="@style/tile"/>
+            <Button
+                android:id="@+id/tileThree"
+                style="@style/tile"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/tileFour"
+                style="@style/tile"/>
+            <Button
+                android:id="@+id/tileFive"
+                style="@style/tile"/>
+            <Button
+                android:id="@+id/tileSix"
+                style="@style/tile"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/tileSeven"
+                style="@style/tile"/>
+            <Button
+                android:id="@+id/tileEight"
+                style="@style/tile"/>
+            <Button
+                android:id="@+id/tileNine"
+                style="@style/tile"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/dialogue"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/greeting"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="20px"
+                android:textSize="8pt"
+                android:textIsSelectable="true" />
+        </TableRow>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/records"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/records"
+                android:layout_marginBottom="6dp"
+                android:textSize="6pt" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/played"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/played"
+                    android:textSize="6pt" />
+                <TextView
+                    android:id="@+id/countPlayed"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tied"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/tied"
+                    android:textSize="6pt" />
+                <TextView
+                    android:id="@+id/countTied"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/won"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/won"
+                    android:textSize="6pt" />
+                <TextView
+                    android:id="@+id/countWon"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/lost"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/lost"
+                    android:textSize="6pt" />
+                <TextView
+                    android:id="@+id/countLost"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </TableLayout>
+
+</ScrollView>
